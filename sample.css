@@ -1,0 +1,95 @@
+.img-article
+{
+	width: 130px;
+	height: 180px;
+}
+
+.article
+{
+	text-align: center;
+	float: left;
+	margin-top: 20px;
+	margin-left: 13px;
+	margin-right: 13px;
+	padding: 5px;
+	border-radius: 3px;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.all-article
+{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 62.5rem;
+	display: block;
+}
+
+/*Popup*/
+
+.pop-up 
+{
+	position:absolute; 
+	top:0; 
+	left:-500em; /*out of the screen*/
+}
+
+.pop-up:target 
+{
+	position:static; 
+	left:0; /*back into the screen*/
+}
+
+.popBox {
+  background:#ffffff;
+
+  position:absolute; 
+  left:40%; 
+  right:40%; 
+  top:35%; 
+  bottom:35%;
+
+  z-index:1;
+  /*border:1px solid #3a3a3a;*/
+
+  /* CSS3 rounded corners, drop-shadow and opacity fade in */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  opacity:0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+:target .popBox 
+{
+	position:fixed; 
+	opacity:1;
+}
+
+.lightbox 
+{
+	display:none; 
+	text-indent:-200em; 
+	background:#000; 
+	opacity:0.4; 
+	width:100%; 
+	height:100%; 
+	position:fixed; 
+	top:0; left:0; 
+	bottom:0; 
+	right:0;
+}
+:target .lightbox 
+{
+	display:block
+}
+
+.popScroll 
+{
+	position:absolute; 
+	top:9%; 
+	left:3%; 
+	right:3%; 
+	bottom:9%; 
+	overflow-y:auto; 
+	*overflow-y:scroll; 
+	padding-right:0.5em
+}
