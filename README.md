@@ -1,2 +1,2 @@
 # Gallery
-Gallery for films/book and other in htmlt/css3
+Gallery for films/book and other in html/css3
